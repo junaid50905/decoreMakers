@@ -1,0 +1,331 @@
+{
+    "products": [{
+            "id": 1,
+            "name": "Modern Sofa",
+            "image": "/src/assets/images/products/1.png",
+            "currentPrice": 499.99,
+            "previousPrice": 599.99,
+            "quantity": 1,
+            "description": "Upgrade your living room with the sleek and comfortable Modern Sofa.",
+            "rating": {
+                "rate": 4.7,
+                "count": 120
+            }
+        },
+        {
+            "id": 2,
+            "name": "Wooden Dining Table",
+            "image": "./src/assets/images/products/2.png",
+            "currentPrice": 299.99,
+            "previousPrice": 349.99,
+            "quantity": 1,
+            "description": "Gather around the elegant Wooden Dining Table for memorable meals.",
+            "rating": {
+                "rate": 4.5,
+                "count": 90
+            }
+        },
+        {
+            "id": 3,
+            "name": "Vintage Bookshelf",
+            "image": "./src/assets/images/products/3.png",
+            "currentPrice": 179.99,
+            "previousPrice": 199.99,
+            "quantity": 1,
+            "description": "Add a touch of nostalgia to your home with the Vintage Bookshelf.",
+            "rating": {
+                "rate": 4.4,
+                "count": 75
+            }
+        },
+        {
+            "id": 4,
+            "name": "Leather Recliner",
+            "image": "./src/assets/images/products/4.png",
+            "currentPrice": 349.99,
+            "previousPrice": 399.99,
+            "quantity": 1,
+            "description": "Experience luxury and relaxation with the premium Leather Recliner.",
+            "rating": {
+                "rate": 4.8,
+                "count": 110
+            }
+        },
+        {
+            "id": 5,
+            "name": "Outdoor Patio Set",
+            "image": "./src/assets/images/products/5.png",
+            "currentPrice": 599.99,
+            "previousPrice": 649.99,
+            "quantity": 1,
+            "description": "Transform your outdoor space into a stylish oasis with the Outdoor Patio Set.",
+            "rating": {
+                "rate": 4.6,
+                "count": 90
+            }
+        },
+        {
+            "id": 6,
+            "name": "Nordic Chair",
+            "image": "./src/assets/images/products/6.png",
+            "currentPrice": 249.99,
+            "previousPrice": 299.99,
+            "quantity": 1,
+            "description": "Organize your bedroom in style with the spacious Bedroom Dresser.",
+            "rating": {
+                "rate": 4.3,
+                "count": 65
+            }
+        },
+        {
+            "id": 7,
+            "name": "kruzo aero chair",
+            "image": "./src/assets/images/products/7.png",
+            "currentPrice": 129.99,
+            "previousPrice": 149.99,
+            "quantity": 1,
+            "description": "Enhance your living room with the modern Coffee Table Set.",
+            "rating": {
+                "rate": 4.5,
+                "count": 120
+            }
+        },
+        {
+            "id": 8,
+            "name": "ergonomic chair",
+            "image": "./src/assets/images/products/8.png",
+            "currentPrice": 219.99,
+            "previousPrice": 249.99,
+            "quantity": 1,
+            "description": "Relax in style with the comfortable and chic Lounge Chair.",
+            "rating": {
+                "rate": 4.7,
+                "count": 85
+            }
+        },
+        {
+            "id": 9,
+            "name": "sofa",
+            "image": "./src/assets/images/products/9.png",
+            "currentPrice": 379.99,
+            "previousPrice": 429.99,
+            "quantity": 1,
+            "description": "Upgrade your kitchen with the versatile and practical Kitchen Island.",
+            "rating": {
+                "rate": 4.4,
+                "count": 70
+            }
+        },
+        {
+            "id": 10,
+            "name": "Bookcase with Drawers",
+            "image": "./src/assets/images/products/10.png",
+            "currentPrice": 159.99,
+            "previousPrice": 189.99,
+            "quantity": 1,
+            "description": "Organize your books and belongings with the stylish Bookcase with Drawers.",
+            "rating": {
+                "rate": 4.6,
+                "count": 95
+            }
+        },
+        {
+            "id": 11,
+            "name": "Convertible Sofa Bed",
+            "image": "./src/assets/images/products/11.png",
+            "currentPrice": 599.99,
+            "previousPrice": 699.99,
+            "quantity": 1,
+            "description": "Maximize your space with the versatile Convertible Sofa Bed.",
+            "rating": {
+                "rate": 4.5,
+                "count": 110
+            }
+        },
+        {
+            "id": 12,
+            "name": "tool chair",
+            "image": "./src/assets/images/products/12.png",
+            "currentPrice": 129.99,
+            "previousPrice": 149.99,
+            "quantity": 1,
+            "description": "Add a touch of elegance to your living room with the Wooden Coffee Table.",
+            "rating": {
+                "rate": 4.3,
+                "count": 80
+            }
+        },
+        {
+            "id": 13,
+            "name": "",
+            "image": "./src/assets/images/products/13.png",
+            "currentPrice": 89.99,
+            "previousPrice": 99.99,
+            "quantity": 1,
+            "description": "Upgrade your kitchen counter seating with the sleek Bar Stool Set.",
+            "rating": {
+                "rate": 4.7,
+                "count": 100
+            }
+        },
+        {
+            "id": 14,
+            "name": "modern chair",
+            "image": "./src/assets/images/products/14.png",
+            "currentPrice": 279.99,
+            "previousPrice": 319.99,
+            "quantity": 1,
+            "description": "Transform your bathroom with the stylish and functional Bathroom Vanity.",
+            "rating": {
+                "rate": 4.6,
+                "count": 65
+            }
+        },
+        {
+            "id": 15,
+            "name": "stephan coudassot",
+            "image": "./src/assets/images/products/15.png",
+            "currentPrice": 179.99,
+            "previousPrice": 199.99,
+            "quantity": 1,
+            "description": "Add character to your space with the eye-catching Accent Chair.",
+            "rating": {
+                "rate": 4.5,
+                "count": 90
+            }
+        },
+        {
+            "id": 16,
+            "name": "Console Table",
+            "image": "./src/assets/images/products/16.png",
+            "currentPrice": 149.99,
+            "previousPrice": 169.99,
+            "quantity": 1,
+            "description": "Add elegance to your entryway with the versatile Console Table.",
+            "rating": {
+                "rate": 4.4,
+                "count": 75
+            }
+        },
+        {
+            "id": 17,
+            "name": "TV Stand",
+            "image": "./src/assets/images/products/17.png",
+            "currentPrice": 199.99,
+            "previousPrice": 229.99,
+            "quantity": 1,
+            "description": "Upgrade your entertainment area with the functional and stylish TV Stand.",
+            "rating": {
+                "rate": 4.6,
+                "count": 85
+            }
+        },
+        {
+            "id": 18,
+            "name": "Dining Chair Set",
+            "image": "./src/assets/images/products/18.png",
+            "currentPrice": 129.99,
+            "previousPrice": 149.99,
+            "quantity": 1,
+            "description": "Complete your dining set with the comfortable and chic Dining Chair Set.",
+            "rating": {
+                "rate": 4.5,
+                "count": 100
+            }
+        },
+        {
+            "id": 19,
+            "name": "Folding Table",
+            "image": "./src/assets/images/products/19.png",
+            "currentPrice": 79.99,
+            "previousPrice": 89.99,
+            "quantity": 1,
+            "description": "Enhance your space with the practical and space-saving Folding Table.",
+            "rating": {
+                "rate": 4.3,
+                "count": 70
+            }
+        },
+        {
+            "id": 20,
+            "name": "Office Chair",
+            "image": "./src/assets/images/products/20.png",
+            "currentPrice": 149.99,
+            "previousPrice": 179.99,
+            "quantity": 1,
+            "description": "Stay comfortable and productive with the ergonomic Office Chair.",
+            "rating": {
+                "rate": 4.2,
+                "count": 150
+            }
+        }
+    ],
+    "new_arrivals": [{
+            "id": 1,
+            "name": "Modern Sofa",
+            "image": "/src/assets/images/products/1.png",
+            "currentPrice": 499.99,
+            "previousPrice": 599.99,
+            "quantity": 1,
+            "description": "Upgrade your living room with the sleek and comfortable Modern Sofa.",
+            "rating": {
+                "rate": 4.7,
+                "count": 120
+            }
+        },
+        {
+            "id": 2,
+            "name": "Wooden Dining Table",
+            "image": "./src/assets/images/products/2.png",
+            "currentPrice": 299.99,
+            "previousPrice": 349.99,
+            "quantity": 1,
+            "description": "Gather around the elegant Wooden Dining Table for memorable meals.",
+            "rating": {
+                "rate": 4.5,
+                "count": 90
+            }
+        },
+        {
+            "id": 3,
+            "name": "Vintage Bookshelf",
+            "image": "./src/assets/images/products/3.png",
+            "currentPrice": 179.99,
+            "previousPrice": 199.99,
+            "quantity": 1,
+            "description": "Add a touch of nostalgia to your home with the Vintage Bookshelf.",
+            "rating": {
+                "rate": 4.4,
+                "count": 75
+            }
+        }
+    ],
+    "blogs": [{
+            "id": 1,
+            "title": "Embracing Minimalism: The Art of Decluttering Your Living Space",
+            "author": "Jane Doe",
+            "image": "/src/assets/images/blogs/post-1.jpg",
+            "content": "In a world brimming with distractions, the concept of minimalism has taken the interior design landscape by storm...",
+            "publishedDate": "2023-08-14",
+            "views": 256
+        },
+        {
+            "id": 2,
+            "title": "Rustic Elegance: Infusing Warmth and Charm into Your Home",
+            "author": "John Smith",
+            "image": "/src/assets/images/blogs/post-2.jpg",
+            "content": "Unveil the beauty of rustic elegance in your home by embracing natural textures, warm colors, and timeless pieces...",
+            "publishedDate": "2023-07-28",
+            "views": 412
+        },
+        {
+            "id": 3,
+            "title": "Functional Furnishing: Optimizing Space with Smart Storage Solutions",
+            "author": "Emily Green",
+            "image": "/src/assets/images/blogs/post-3.jpg",
+            "content": "Discover ingenious ways to maximize space and maintain an organized home environment through innovative furniture solutions...",
+            "publishedDate": "2023-07-10",
+            "views": 318
+        }
+    ]
+}

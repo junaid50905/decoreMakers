@@ -1,0 +1,4 @@
+.navbar-dark .navbar-nav .nav-link.active {
+    color: rgb(255, 218, 8)!important;
+    opacity: 1 !important;
+}
