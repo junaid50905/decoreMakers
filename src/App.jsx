@@ -9,7 +9,7 @@ import { Routes, Route } from 'react-router-dom'
 import './App.css'
 const App = () => {
   return (
-    <>
+    <div>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -18,7 +18,7 @@ const App = () => {
         <Route path="/blogs" element={<Blogs />} />
       </Routes>
       <Footer/>
-    </>
+    </div>
   )
 }
 

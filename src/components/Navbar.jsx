@@ -1,15 +1,17 @@
 
+import { useSelector } from 'react-redux'
 import { NavLink, Link } from 'react-router-dom'
 
-
+import cartImg from '../assets/images/websites outlook/cart.svg'
 const Navbar = () => {
+    const { subTotal, cart} = useSelector(state=> state.cartInfo)
 
   return (
       <>
-          <nav className="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark">
+          <nav className="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark sticky-top">
 
               <div className="container">
-                  <Link to={'/'} className="navbar-brand" href="index.html"><h2>DecorMakers<span className='text-success'>.</span></h2></Link>
+                  <Link to={'/'} className="navbar-brand"><h2>DecorMakers<span className='text-success'>.</span></h2></Link>
 
                   <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
                       <span className="navbar-toggler-icon"></span>
@@ -23,8 +25,13 @@ const Navbar = () => {
                       </ul>
                       <ul className='mt-3' style={{ listStyle: 'none' }}>
                           <li>
-                              <Link to={'/cart'} className="fa-solid fa-cart-shopping" style={{ color: 'white', fontSize: '20px', textDecoration: 'none' }}></Link><sup className='bg-warning px-1 rounded-circle' style={{ fontWeight: 'bold' }}>7</sup>
-                            </li>
+                              {/* <Link to={'/cart'} className="fa-solid fa-cart-shopping" style={{ color: 'white', textDecoration: 'none', fontSize: '20px' }}><sup className='bg-warning rounded-circle' style={{ padding: '2px 5px', color: 'black', fontSize: '8px !important' }}>{totalQuantity}</sup></Link> */}
+                              <Link to={'/cart'} style={{ textDecoration: 'none' }}>
+                                  <img src={cartImg} alt="" />
+                                  <sup className='bg-warning rounded-circle' style={{ padding: '1px 4px', fontWeight: 'bold' }}>{cart.length}</sup>
+                                  <span style={{ color: 'white', marginLeft: '10px' }}>[ $ {subTotal.toFixed(2)} ]</span>
+                              </Link>
+                          </li>
                       </ul>
                   </div>
               </div>

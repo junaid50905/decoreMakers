@@ -1,6 +1,19 @@
+import {  useDispatch, useSelector } from "react-redux"
 import PageTitle from "../components/PageTitle"
 
+import { removeFromCart } from "../features/cart/cartSlice"
+
 const Cart = () => {
+    const cartProducts = useSelector(state => state.cartInfo.cart)
+    const { subTotal, cart, totalQuantity, discountInPercent } = useSelector(state => state.cartInfo)
+
+    const dispatch = useDispatch()
+
+    const removeFromCartHandler = (productId)=>{
+        dispatch(removeFromCart(productId))
+    }
+
+
     return (
         <section>
             <PageTitle title={'Cart'} />
@@ -19,22 +32,30 @@ const Cart = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td className="product-thumbnail">
-                                    <img src="/src/assets/images/websites outlook/product-2.png" alt="Image" className="img-fluid" />
-                                </td>
-                                <td className="product-name">
-                                    <h2 className="h5 text-black">Product 1</h2>
-                                </td>
-                                <td>$49.00</td>
-                                <td>
-                                    <button className="btn" style={{ fontSize: '25px' }}>-</button>
-                                    <input type="text" value={1} style={{ width: '40px', textAlign: 'center', border: '1px solid #bdc3c7', margin: '0 10px' }}/>
-                                    <button className="btn" style={{ fontSize: '25px' }}>+</button>
-                                </td>
-                                <td>$49.00</td>
-                                <td><a href="#" className="btn btn-black btn-sm">X</a></td>
-                            </tr>
+                            {
+                                cartProducts.map((cartProduct, i)=>{
+                                    const {id, image, currentPrice, name, quantity} = cartProduct
+                                    return(
+                                        <tr key={i}>
+                                            <td className="product-thumbnail">
+                                                <img src={image} alt="Image" className="img-fluid" />
+                                            </td>
+                                            <td className="product-name">
+                                                <h6 className="h6 text-black">{name}</h6>
+                                            </td>
+                                            <td>$ {currentPrice}</td>
+                                            <td>
+                                                <button className="btn" style={{ fontSize: '25px' }}>-</button>
+                                                {/* <input type="text" value={quantity} style={{ width: '40px', textAlign: 'center', border: '1px solid #bdc3c7', margin: '0 10px' }} /> */}
+                                                <span>{quantity}</span>
+                                                <button className="btn" style={{ fontSize: '25px' }}>+</button>
+                                            </td>
+                                            <td>${quantity * currentPrice}</td>
+                                            <td><button className="btn btn-sm text-danger" onClick={()=> removeFromCartHandler(id)}>X</button></td>
+                                        </tr> 
+                                    )
+                                })
+                            }
                         </tbody>
                     </table>
                 </div>
@@ -72,21 +93,28 @@ const Cart = () => {
                                 </div>
                                 <div className="row mb-3">
                                     <div className="col-md-6">
+                                        <span className="text-black">Total Item</span>
+                                    </div>
+                                    <div className="col-md-6 text-right">
+                                        <strong className="text-black">{cart.length}</strong>
+                                    </div>
+                                </div>
+                                <div className="row mb-3">
+                                    <div className="col-md-6">
+                                        <span className="text-black">Total Quantity</span>
+                                    </div>
+                                    <div className="col-md-6 text-right">
+                                        <strong className="text-black">{totalQuantity}</strong>
+                                    </div>
+                                </div>
+                                <div className="row mb-3">
+                                    <div className="col-md-6">
                                         <span className="text-black">Subtotal</span>
                                     </div>
                                     <div className="col-md-6 text-right">
-                                        <strong className="text-black">$230.00</strong>
+                                        <strong className="text-black">$ {subTotal.toFixed(2)}</strong>
                                     </div>
                                 </div>
-                                <div className="row mb-5">
-                                    <div className="col-md-6">
-                                        <span className="text-black">Total</span>
-                                    </div>
-                                    <div className="col-md-6 text-right">
-                                        <strong className="text-black">$230.00</strong>
-                                    </div>
-                                </div>
-
                                 <div className="row">
                                     <div className="col-md-12">
                                         <button className="btn btn-black btn-lg py-3 btn-block">Proceed To Checkout</button>
