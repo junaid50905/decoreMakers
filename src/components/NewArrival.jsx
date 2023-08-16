@@ -1,5 +1,15 @@
+import { useDispatch } from 'react-redux'
 import Data from '../data/Data.json'
+import { addToCart } from '../features/cart/cartSlice'
+
 const NewArrival = () => {
+
+    const dispatch = useDispatch()
+
+    const addToCartHandler = (new_arrival) => {
+        dispatch(addToCart(new_arrival))
+    }
+
     return (
         <div className="product-section">
             <div className="container">
@@ -15,12 +25,12 @@ const NewArrival = () => {
                             const { name, currentPrice, image } = new_arrival
                             return(
                                 <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0" key={i}>
-                                    <a className="product-item" href="cart.html">
+                                    <a className="product-item">
                                         <img src={image} className="img-fluid product-thumbnail" />
                                         <h3 className="product-title">{name}</h3>
                                         <strong className="product-price">$ {currentPrice}</strong>
 
-                                        <span className="icon-cross">
+                                        <span className="icon-cross" onClick={() => addToCartHandler(new_arrival)}>
                                             <i className="fa-solid fa-plus text-white mt-2" style={{ fontSize: '20px' }}></i>
                                         </span>
                                     </a>

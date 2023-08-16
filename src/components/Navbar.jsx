@@ -2,6 +2,8 @@
 import { useSelector } from 'react-redux'
 import { NavLink, Link } from 'react-router-dom'
 
+
+
 import cartImg from '../assets/images/websites outlook/cart.svg'
 const Navbar = () => {
     const { subTotal, cart} = useSelector(state=> state.cartInfo)
