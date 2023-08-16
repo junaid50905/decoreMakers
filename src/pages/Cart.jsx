@@ -1,6 +1,6 @@
 import {  useDispatch, useSelector } from "react-redux"
 import PageTitle from "../components/PageTitle"
-import { removeFromCart } from "../features/cart/cartSlice"
+import { removeFromCart, cartItemDecrementByOne, cartItemIncrementByOne } from "../features/cart/cartSlice"
 import { Link } from "react-router-dom"
 
 const Cart = () => {
@@ -11,6 +11,14 @@ const Cart = () => {
 
     const removeFromCartHandler = (productId)=>{
         dispatch(removeFromCart(productId))
+    }
+    //cartItemDecrement
+    const cartItemDecrement =(id)=>{
+        dispatch(cartItemDecrementByOne(id))
+    }
+    //cartItemIncrement
+    const cartItemIncrement = (id)=>{
+        dispatch(cartItemIncrementByOne(id))
     }
     
 
@@ -48,11 +56,11 @@ const Cart = () => {
                                                     </td>
                                                     <td>$ {currentPrice}</td>
                                                     <td>
-                                                        <button className="btn" style={{ fontSize: '25px' }}>-</button>
+                                                        <button className="btn" style={{ fontSize: '25px' }} onClick={() => cartItemDecrement(id)} disabled={quantity === 0}>-</button>
                                                         <span>{quantity}</span>
-                                                        <button className="btn" style={{ fontSize: '25px' }}>+</button>
+                                                        <button className="btn" style={{ fontSize: '25px' }} onClick={() => cartItemIncrement(id)}>+</button>
                                                     </td>
-                                                    <td>${quantity * currentPrice}</td>
+                                                    <td>${(quantity * currentPrice).toFixed(2)}</td>
                                                     <td><button className="btn btn-sm text-danger" onClick={() => removeFromCartHandler(id)}>X</button></td>
                                                 </tr>
                                             )

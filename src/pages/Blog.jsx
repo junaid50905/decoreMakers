@@ -1,9 +1,21 @@
 
+import { useParams } from "react-router-dom"
+
 const Blog = () => {
+  const {id} = useParams()
+  
+  
+
+
+  
   return (
-    <div>
-      <h2>Single Blog</h2>
-    </div>
+    <section>
+      <div className="container">
+        <div className="blog">
+          <h2>single blog {id}</h2>
+        </div>
+      </div>
+    </section>
   )
 }
 

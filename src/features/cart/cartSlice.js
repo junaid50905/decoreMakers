@@ -12,7 +12,7 @@ const cartSlice = createSlice({
     initialState,
     reducers: {
         addToCart(state, action) {
-            let findItem = state.cart.findIndex(item => item.id === action.payload.id)
+            const findItem = state.cart.findIndex(item => item.id === action.payload.id)
             if (findItem !== -1) {
                 state.cart[findItem].quantity += 1
             } else {
@@ -30,11 +30,21 @@ const cartSlice = createSlice({
                 state.totalQuantity -= removedItem.quantity;
                 state.subTotal -= removedItem.currentPrice * removedItem.quantity;
             }
-
-
+        },
+        cartItemDecrementByOne(state, action) {
+            const findItem = state.cart.findIndex(item => item.id === action.payload)
+            state.cart[findItem].quantity -= 1
+            state.totalQuantity -= 1
+            state.subTotal -= state.cart[findItem].currentPrice
+        },
+        cartItemIncrementByOne(state, action) {
+            const findItem = state.cart.findIndex(item => item.id === action.payload)
+            state.cart[findItem].quantity += 1
+            state.totalQuantity += 1
+            state.subTotal += state.cart[findItem].currentPrice
         }
     }
 })
 
 export default cartSlice.reducer
-export const { addToCart, removeFromCart } = cartSlice.actions
+export const { addToCart, removeFromCart, cartItemDecrementByOne, cartItemIncrementByOne } = cartSlice.actions

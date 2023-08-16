@@ -326,6 +326,33 @@
             "content": "Discover ingenious ways to maximize space and maintain an organized home environment through innovative furniture solutions...",
             "publishedDate": "2023-07-10",
             "views": 318
+        },
+        {
+            "id": 4,
+            "title": "Urban Oasis: Creating a Serene Retreat in Your Apartment",
+            "author": "Sophia Lee",
+            "image": "/src/assets/images/blogs/post-1.jpg",
+            "content": "Transform your urban dwelling into a calming sanctuary by incorporating natural elements, smart storage solutions, and soothing palettes...",
+            "publishedDate": "2023-08-25",
+            "views": 189
+        },
+        {
+            "id": 5,
+            "title": "Blending Vintage Charm with Modern Comfort: The Timeless Trend",
+            "author": "Daniel Clark",
+            "image": "/src/assets/images/blogs/post-1.jpg",
+            "content": "Discover the art of combining vintage aesthetics with contemporary comforts, resulting in spaces that radiate timeless allure and warmth...",
+            "publishedDate": "2023-08-19",
+            "views": 275
+        },
+        {
+            "id": 6,
+            "title": "Maximizing Small Spaces: Smart Furniture Solutions for Tiny Homes",
+            "author": "Emma Turner",
+            "image": "/src/assets/images/blogs/post-1.jpg",
+            "content": "Navigate the world of compact living with ingenious furniture choices that optimize functionality, comfort, and style within limited spaces...",
+            "publishedDate": "2023-08-10",
+            "views": 210
         }
     ]
 }

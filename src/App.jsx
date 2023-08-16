@@ -10,7 +10,7 @@ import './App.css'
 import Blog from "./pages/Blog"
 const App = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -20,7 +20,7 @@ const App = () => {
         <Route path="/blogs/:id" element={<Blog/>} />
       </Routes>
       <Footer/>
-    </div>
+    </>
   )
 }
 

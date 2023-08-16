@@ -18,7 +18,7 @@ const NewArrival = () => {
                     <div className="col-md-12 col-lg-3 mb-5 mb-lg-0">
                         <h2 className="mb-4 section-title">New Styles, Fresh Vibes.</h2>
                         <p className="mb-4">Introducing our captivating new arrivals – a fusion of elegance and innovation. Elevate your space with trendsetting designs that redefine style. Discover today and embrace a world of contemporary living like never before.</p>
-                        <p><a href="shop.html" className="btn">Explore</a></p>
+                        <p><button className="btn">Explore</button></p>
                     </div>
                     {
                         Data.new_arrivals.map((new_arrival, i)=>{

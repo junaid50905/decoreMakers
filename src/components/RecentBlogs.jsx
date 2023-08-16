@@ -1,6 +1,8 @@
 import Data from '../data/Data.json'
 import { Link } from 'react-router-dom';
 const RecentBlogs = () => {
+
+    const recentBlogs = Data.blogs.slice(0, 3);
   return (
       <div className="blog-section">
           <div className="container">
@@ -16,10 +18,10 @@ const RecentBlogs = () => {
               <div className="row">
 
                   {
-                    Data.blogs.map((blog, i)=>{
+                      recentBlogs.map((blog, i)=>{
                         const { title, author, image, publishedDate, views } = blog
                         return(
-                            <div className="col-12 col-sm-6 col-md-4 mb-4 mb-md-0" key={i}>
+                            <div className="col-12 col-sm-6 col-md-4" key={i}>
                                 <div className="post-entry">
                                     <a href="#" className="post-thumbnail"><img src={image} alt="Image" className="img-fluid" /></a>
                                     <div className="post-content-entry">
