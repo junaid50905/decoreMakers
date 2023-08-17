@@ -3,6 +3,7 @@ import PageTitle from "../components/PageTitle"
 import Data from '../data/Data.json'
 
 import { addToCart } from '../features/cart/cartSlice'
+import { Link } from "react-router-dom"
 
 
 
@@ -26,9 +27,9 @@ const Shop = () => {
 
                     {
                         Data.products.map((product, i)=>{
-                            const {name, image, currentPrice} = product
+                            const {id, name, image, currentPrice} = product
                             return(
-                                <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0" key={i}>
+                                <Link to={`/shop/${id}`} className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0" key={i}>
                                     <a className="product-item">
                                         <img src={image} className="img-fluid product-thumbnail" />
                                         <h3 className="product-title">{name}</h3>
@@ -38,7 +39,7 @@ const Shop = () => {
                                             <i className="fa-solid fa-plus text-white mt-2" style={{ fontSize: '20px' }}></i>
                                         </span>
                                     </a>
-                                </div>
+                                </Link>
                             )
                         })
                     }

@@ -8,6 +8,7 @@ import { Routes, Route } from 'react-router-dom'
 
 import './App.css'
 import Blog from "./pages/Blog"
+import Product from "./pages/Product"
 const App = () => {
   return (
     <>
@@ -15,9 +16,10 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/shop/:id" element={<Product />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/blogs" element={<Blogs />} />
-        <Route path="/blogs/:id" element={<Blog/>} />
+        <Route path="/blogs/:title" element={<Blog/>} />
       </Routes>
       <Footer/>
     </>

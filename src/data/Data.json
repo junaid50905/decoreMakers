@@ -15,7 +15,7 @@
         {
             "id": 2,
             "name": "Wooden Dining Table",
-            "image": "./src/assets/images/products/2.png",
+            "image": "/src/assets/images/products/2.png",
             "currentPrice": 299.99,
             "previousPrice": 349.99,
             "quantity": 1,
@@ -28,7 +28,7 @@
         {
             "id": 3,
             "name": "Vintage Bookshelf",
-            "image": "./src/assets/images/products/3.png",
+            "image": "/src/assets/images/products/3.png",
             "currentPrice": 179.99,
             "previousPrice": 199.99,
             "quantity": 1,
@@ -41,7 +41,7 @@
         {
             "id": 4,
             "name": "Leather Recliner",
-            "image": "./src/assets/images/products/4.png",
+            "image": "/src/assets/images/products/4.png",
             "currentPrice": 349.99,
             "previousPrice": 399.99,
             "quantity": 1,
@@ -54,7 +54,7 @@
         {
             "id": 5,
             "name": "Outdoor Patio Set",
-            "image": "./src/assets/images/products/5.png",
+            "image": "/src/assets/images/products/5.png",
             "currentPrice": 599.99,
             "previousPrice": 649.99,
             "quantity": 1,
@@ -67,7 +67,7 @@
         {
             "id": 6,
             "name": "Nordic Chair",
-            "image": "./src/assets/images/products/6.png",
+            "image": "/src/assets/images/products/6.png",
             "currentPrice": 249.99,
             "previousPrice": 299.99,
             "quantity": 1,
@@ -80,7 +80,7 @@
         {
             "id": 7,
             "name": "kruzo aero chair",
-            "image": "./src/assets/images/products/7.png",
+            "image": "/src/assets/images/products/7.png",
             "currentPrice": 129.99,
             "previousPrice": 149.99,
             "quantity": 1,
@@ -93,7 +93,7 @@
         {
             "id": 8,
             "name": "ergonomic chair",
-            "image": "./src/assets/images/products/8.png",
+            "image": "/src/assets/images/products/8.png",
             "currentPrice": 219.99,
             "previousPrice": 249.99,
             "quantity": 1,
@@ -106,7 +106,7 @@
         {
             "id": 9,
             "name": "sofa",
-            "image": "./src/assets/images/products/9.png",
+            "image": "/src/assets/images/products/9.png",
             "currentPrice": 379.99,
             "previousPrice": 429.99,
             "quantity": 1,
@@ -119,7 +119,7 @@
         {
             "id": 10,
             "name": "Bookcase with Drawers",
-            "image": "./src/assets/images/products/10.png",
+            "image": "/src/assets/images/products/10.png",
             "currentPrice": 159.99,
             "previousPrice": 189.99,
             "quantity": 1,
@@ -132,7 +132,7 @@
         {
             "id": 11,
             "name": "Convertible Sofa Bed",
-            "image": "./src/assets/images/products/11.png",
+            "image": "/src/assets/images/products/11.png",
             "currentPrice": 599.99,
             "previousPrice": 699.99,
             "quantity": 1,
@@ -145,7 +145,7 @@
         {
             "id": 12,
             "name": "tool chair",
-            "image": "./src/assets/images/products/12.png",
+            "image": "/src/assets/images/products/12.png",
             "currentPrice": 129.99,
             "previousPrice": 149.99,
             "quantity": 1,
@@ -158,7 +158,7 @@
         {
             "id": 13,
             "name": "Moder sofa for relex",
-            "image": "./src/assets/images/products/13.png",
+            "image": "/src/assets/images/products/13.png",
             "currentPrice": 89.99,
             "previousPrice": 99.99,
             "quantity": 1,
@@ -171,7 +171,7 @@
         {
             "id": 14,
             "name": "modern chair",
-            "image": "./src/assets/images/products/14.png",
+            "image": "/src/assets/images/products/14.png",
             "currentPrice": 279.99,
             "previousPrice": 319.99,
             "quantity": 1,
@@ -184,7 +184,7 @@
         {
             "id": 15,
             "name": "stephan coudassot",
-            "image": "./src/assets/images/products/15.png",
+            "image": "/src/assets/images/products/15.png",
             "currentPrice": 179.99,
             "previousPrice": 199.99,
             "quantity": 1,
@@ -197,7 +197,7 @@
         {
             "id": 16,
             "name": "Console Table",
-            "image": "./src/assets/images/products/16.png",
+            "image": "/src/assets/images/products/16.png",
             "currentPrice": 149.99,
             "previousPrice": 169.99,
             "quantity": 1,
@@ -210,7 +210,7 @@
         {
             "id": 17,
             "name": "TV Stand",
-            "image": "./src/assets/images/products/17.png",
+            "image": "/src/assets/images/products/17.png",
             "currentPrice": 199.99,
             "previousPrice": 229.99,
             "quantity": 1,
@@ -223,7 +223,7 @@
         {
             "id": 18,
             "name": "Dining Chair Set",
-            "image": "./src/assets/images/products/18.png",
+            "image": "/src/assets/images/products/18.png",
             "currentPrice": 129.99,
             "previousPrice": 149.99,
             "quantity": 1,
@@ -236,7 +236,7 @@
         {
             "id": 19,
             "name": "Folding Table",
-            "image": "./src/assets/images/products/19.png",
+            "image": "/src/assets/images/products/19.png",
             "currentPrice": 79.99,
             "previousPrice": 89.99,
             "quantity": 1,
@@ -249,7 +249,7 @@
         {
             "id": 20,
             "name": "Office Chair",
-            "image": "./src/assets/images/products/20.png",
+            "image": "/src/assets/images/products/20.png",
             "currentPrice": 149.99,
             "previousPrice": 179.99,
             "quantity": 1,
