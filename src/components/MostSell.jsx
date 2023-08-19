@@ -16,7 +16,6 @@ const MostSell = () => {
                                     <div className="pt-3">
                                         <h3>{name.toUpperCase()}</h3>
                                         <p>{description}</p>
-                                        <p><a href="#">Read More</a></p>
                                     </div>
                                 </div>
                             </div>

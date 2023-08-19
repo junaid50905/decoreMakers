@@ -29,17 +29,17 @@ const Shop = () => {
                         Data.products.map((product, i)=>{
                             const {id, name, image, currentPrice} = product
                             return(
-                                <Link to={`/shop/${id}`} className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0" key={i}>
+                                <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0" key={i}>
                                     <a className="product-item">
-                                        <img src={image} className="img-fluid product-thumbnail" />
-                                        <h3 className="product-title">{name}</h3>
+                                        <img src={image} className="img-fluid product-thumbnail" />                                        
+                                        <Link to={`/shop/${id}`}><h3 className="product-title">{name}</h3></Link>
                                         <strong className="product-price">$ {currentPrice}</strong>
 
                                         <span className="icon-cross" onClick={()=> addToCartHandler(product)}>
                                             <i className="fa-solid fa-plus text-white mt-2" style={{ fontSize: '20px' }}></i>
                                         </span>
                                     </a>
-                                </Link>
+                                </div>
                             )
                         })
                     }

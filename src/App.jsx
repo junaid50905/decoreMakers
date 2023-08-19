@@ -9,6 +9,9 @@ import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Blog from "./pages/Blog"
 import Product from "./pages/Product"
+import ErrorPage from "./pages/ErrorPage"
+import Checkout from "./pages/Checkout"
+import ContactUs from "./pages/ContactUs"
 const App = () => {
   return (
     <>
@@ -18,8 +21,11 @@ const App = () => {
         <Route path="/shop" element={<Shop />} />
         <Route path="/shop/:id" element={<Product />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<Checkout />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blogs/:title" element={<Blog/>} />
+        <Route path="/contact-us" element={<ContactUs/>} />
+        <Route path="/*" element={<ErrorPage/>} />
       </Routes>
       <Footer/>
     </>

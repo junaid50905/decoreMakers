@@ -22,7 +22,7 @@ const InteriorService = () => {
                           <li>Unique Style and Vision Reflection</li>
                           <li>Creating Modern, Inviting Homes</li>
                       </ul>
-                      <p><Link to={'/shop'} className="btn">Explore</Link></p>
+                      <p><Link to={'/shop'} className="btn">Shop Now</Link></p>
                   </div>
               </div>
           </div>

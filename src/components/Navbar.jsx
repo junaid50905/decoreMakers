@@ -24,6 +24,7 @@ const Navbar = () => {
                           <li className='nav-item'><NavLink className="nav-link" to={'/'}>Home</NavLink></li>
                           <li className='nav-item'><NavLink className="nav-link" to={'/shop'}>Shop</NavLink></li>
                           <li className='nav-item'><NavLink className="nav-link" to={'/blogs'}>Blogs</NavLink></li>
+                          <li className='nav-item'><NavLink className="nav-link" to={'/contact-us'}>Contact</NavLink></li>
                       </ul>
                       <ul className='mt-3' style={{ listStyle: 'none' }}>
                           <li>

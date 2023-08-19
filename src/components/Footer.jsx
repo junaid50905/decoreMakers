@@ -88,7 +88,7 @@ const Footer = () => {
               <div className="border-top copyright">
                   <div className="row pt-4">
                       <div className="col-lg-6">
-                          <p className="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a>
+                          <p className="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Junaid Hossain</a>
                           </p>
                       </div>
 

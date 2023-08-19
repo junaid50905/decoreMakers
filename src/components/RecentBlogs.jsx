@@ -21,7 +21,7 @@ const RecentBlogs = () => {
                       recentBlogs.map((blog, i)=>{
                         const { title, author, image, publishedDate, views } = blog
                         return(
-                            <div className="col-12 col-sm-6 col-md-4" key={i}>
+                            <div className="col-12 col-sm-6 col-md-4 my-3 my-md-0" key={i}>
                                 <div className="post-entry">
                                     <a href="#" className="post-thumbnail"><img src={image} alt="Image" className="img-fluid" /></a>
                                     <div className="post-content-entry">

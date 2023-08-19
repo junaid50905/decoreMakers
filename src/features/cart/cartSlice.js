@@ -42,7 +42,8 @@ const cartSlice = createSlice({
             state.cart[findItem].quantity += 1
             state.totalQuantity += 1
             state.subTotal += state.cart[findItem].currentPrice
-        }
+        },
+
     }
 })
 

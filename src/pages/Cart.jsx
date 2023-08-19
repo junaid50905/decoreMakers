@@ -56,7 +56,7 @@ const Cart = () => {
                                                     </td>
                                                     <td>$ {currentPrice}</td>
                                                     <td>
-                                                        <button className="btn" style={{ fontSize: '25px' }} onClick={() => cartItemDecrement(id)} disabled={quantity === 0}>-</button>
+                                                        <button className="btn" style={{ fontSize: '25px' }} onClick={() => cartItemDecrement(id)} disabled={quantity === 1}>-</button>
                                                         <span>{quantity}</span>
                                                         <button className="btn" style={{ fontSize: '25px' }} onClick={() => cartItemIncrement(id)}>+</button>
                                                     </td>
@@ -73,11 +73,8 @@ const Cart = () => {
                         <div className="row mb-5">
                             <div className="col-md-6">
                                 <div className="row mb-5">
-                                    <div className="col-md-6 mb-3 mb-md-0">
-                                        <button className="btn btn-black btn-sm btn-block">Update Cart</button>
-                                    </div>
                                     <div className="col-md-6">
-                                        <button className="btn btn-outline-black btn-sm btn-block">Continue Shopping</button>
+                                        <Link to={'/shop'} className="btn btn-outline-black btn-sm btn-block">Continue Shopping</Link>
                                     </div>
                                 </div>
                                 <div className="row">
@@ -119,7 +116,7 @@ const Cart = () => {
                                         </div>
                                         <div className="row mb-3">
                                             <div className="col-md-6">
-                                                <span className="text-black">Subtotal</span>
+                                                <span className="text-black">Total</span>
                                             </div>
                                             <div className="col-md-6 text-right">
                                                 <strong className="text-black">$ {subTotal.toFixed(2)}</strong>
@@ -127,7 +124,7 @@ const Cart = () => {
                                         </div>
                                         <div className="row">
                                             <div className="col-md-12">
-                                                <button className="btn btn-black btn-lg py-3 btn-block">Proceed To Checkout</button>
+                                                <Link to={'/checkout'} className="btn btn-black btn-lg py-3 btn-block">Proceed To Checkout</Link>
                                             </div>
                                         </div>
                                     </div>

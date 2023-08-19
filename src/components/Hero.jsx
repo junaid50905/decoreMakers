@@ -9,7 +9,7 @@ const Hero = () => {
                         <div className="intro-excerpt">
                             <h1>Modern Interior <span className="d-block">Design Studio</span></h1>
                             <p className="mb-4">DecorMakers: Crafting modern living with curated furniture selections that blend artistry, craftsmanship, and personalized design.</p>
-                            <p><Link to={'/shop'} className="btn btn-secondary me-2">Shop Now</Link><a href="#" className="btn btn-white-outline">Explore</a></p>
+                            <p><Link to={'/shop'} className="btn btn-secondary me-2">Shop Now</Link></p>
                         </div>
                     </div>
                     <div className="col-lg-7">
