@@ -2,3 +2,9 @@
     color: rgb(255, 218, 8)!important;
     opacity: 1 !important;
 }
+
+.form {
+    background-color: #3b5d50;
+    color: white;
+    border-radius: 5px;
+}

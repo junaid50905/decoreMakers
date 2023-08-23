@@ -12,6 +12,9 @@ import Product from "./pages/Product"
 import ErrorPage from "./pages/ErrorPage"
 import Checkout from "./pages/Checkout"
 import ContactUs from "./pages/ContactUs"
+import Register from "./components/Register"
+import Login from "./components/Login"
+import CheckToaster from "./pages/CheckToaster"
 const App = () => {
   return (
     <>
@@ -25,6 +28,9 @@ const App = () => {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blogs/:title" element={<Blog/>} />
         <Route path="/contact-us" element={<ContactUs/>} />
+        <Route path="/register" element={<Register/>} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/check" element={<CheckToaster/>} />
         <Route path="/*" element={<ErrorPage/>} />
       </Routes>
       <Footer/>
