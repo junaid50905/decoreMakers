@@ -1,12 +1,45 @@
 
-import { useSelector } from 'react-redux'
-import { NavLink, Link } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { NavLink, Link, useNavigate } from 'react-router-dom'
 
 
 
 import cartImg from '../assets/images/websites outlook/cart.svg'
+import { logout } from '../features/user/userSlice'
+import { toast } from 'react-toastify'
+import axios from 'axios'
 const Navbar = () => {
     const { subTotal, cart} = useSelector(state=> state.cartInfo)
+    const { name } = useSelector(state => state.user.userData)
+    const  isLoggedIn  = useSelector(state => state.user.isLoggedIn)
+    const  token  = useSelector(state => state.user.token)
+
+    // dispatch
+    const dispatch = useDispatch()
+
+    // navigate
+    const navigate = useNavigate()
+
+    // logoutHandler
+    const logoutHandler = async ()=>{
+        
+
+        try {
+            const response = await axios.post('http://127.0.0.1:8000/api/logout', null, {
+                headers: {
+                    Authorization: `Bearer ${token}` // Attach the token in the Authorization header
+                }
+            });
+            dispatch(logout()); 
+            navigate('/'); 
+            console.log(response.data.message);
+            toast.success('Logged out successfully'); // Show a success toast notification
+        } catch (error) {
+            console.log(error);
+            toast.error('An error occurred while logging out'); // Show an error toast notification
+        }
+        
+    }
 
   return (
       <>
@@ -25,12 +58,31 @@ const Navbar = () => {
                           <li className='nav-item'><NavLink className="nav-link" to={'/shop'}>Shop</NavLink></li>
                           <li className='nav-item'><NavLink className="nav-link" to={'/blogs'}>Blogs</NavLink></li>
                           <li className='nav-item'><NavLink className="nav-link" to={'/contact-us'}>Contact</NavLink></li>
-                          <li className='nav-item'><NavLink className="nav-link" to={'/register'}>Register</NavLink></li>
-                          <li className='nav-item'><NavLink className="nav-link" to={'/login'}>Login</NavLink></li>
+                          {
+                            !isLoggedIn && (
+                                <>
+                                      <li className='nav-item'><NavLink className="nav-link" to={'/register'}>Register</NavLink></li>
+                                      <li className='nav-item'><NavLink className="nav-link" to={'/login'}>Login</NavLink></li>
+                                </>
+                            )
+                          }
                       </ul>
+                      {/* user info navlink */}
+                      {
+                        isLoggedIn && (
+                              <div className="dropdown">
+                                  <span className="text-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      {name}
+                                  </span>
+                                  <ul className="dropdown-menu">
+                                      <li><Link to={'/user-profile'} className="dropdown-item">User profile</Link></li>
+                                      <li><button className="dropdown-item" onClick={logoutHandler}>Logout</button></li>
+                                  </ul>
+                              </div>
+                        )
+                      }
                       <ul className='mt-3' style={{ listStyle: 'none' }}>
                           <li>
-                              {/* <Link to={'/cart'} className="fa-solid fa-cart-shopping" style={{ color: 'white', textDecoration: 'none', fontSize: '20px' }}><sup className='bg-warning rounded-circle' style={{ padding: '2px 5px', color: 'black', fontSize: '8px !important' }}>{totalQuantity}</sup></Link> */}
                               <Link to={'/cart'} style={{ textDecoration: 'none' }}>
                                   <img src={cartImg} alt="" />
                                   <sup className='bg-warning rounded-circle' style={{ padding: '1px 4px', fontWeight: 'bold' }}>{cart.length}</sup>

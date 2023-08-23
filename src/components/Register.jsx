@@ -1,7 +1,11 @@
 import axios from "axios";
-import { useState } from "react"
+import {  useState } from "react"
 import { useNavigate } from "react-router-dom";
 import {  toast } from 'react-toastify';
+import { useDispatch } from "react-redux";
+import { registration } from "../features/user/userSlice";
+
+
 
 const Register = () => {
     // user data
@@ -20,6 +24,11 @@ const Register = () => {
     // navigate
     const navigate = useNavigate()
 
+    // dispatch
+    const dispatch = useDispatch()
+
+
+
 
 
     // registration Form Submit Handler
@@ -35,10 +44,15 @@ const Register = () => {
                 setLoading(false)
 
                 // Navigate first and then show a toast notification
-                navigate('/shop');
+                navigate('/user-profile');
                 setEmail('');
                 setName('');
                 setPassword('');
+
+                // set user token in the redux
+                dispatch(registration(response.data.token))
+
+            
 
                 toast(response.data.message, {
                     autoClose: 3000, // Auto close the notification after 3 seconds
@@ -57,6 +71,8 @@ const Register = () => {
         }
 
     }
+
+    
     
   return (
     <>

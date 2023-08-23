@@ -14,7 +14,10 @@ import Checkout from "./pages/Checkout"
 import ContactUs from "./pages/ContactUs"
 import Register from "./components/Register"
 import Login from "./components/Login"
-import CheckToaster from "./pages/CheckToaster"
+import UserProfile from "./pages/UserProfile"
+
+
+
 const App = () => {
   return (
     <>
@@ -30,7 +33,7 @@ const App = () => {
         <Route path="/contact-us" element={<ContactUs/>} />
         <Route path="/register" element={<Register/>} />
         <Route path="/login" element={<Login/>} />
-        <Route path="/check" element={<CheckToaster/>} />
+        <Route path="/user-profile" element={<UserProfile/>} />
         <Route path="/*" element={<ErrorPage/>} />
       </Routes>
       <Footer/>
